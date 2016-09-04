@@ -39,7 +39,6 @@ public class FileUtils {
             while ((count = origin.read(data, 0, BUFFER)) != -1) {
                 zos.write(data, 0, count);
             }
-            origin.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
